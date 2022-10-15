@@ -210,4 +210,14 @@ function config.filetype()
 	})
 end
 
+
+
+function config.oterm()
+	require("oterm").setup({
+        name = 'oterm',
+        terminal_color = 'oterm',
+        split_hl = 'otermSplit',
+    })
+end
+
 return config

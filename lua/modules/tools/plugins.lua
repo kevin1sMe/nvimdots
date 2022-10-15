@@ -53,4 +53,8 @@ tools["nathom/filetype.nvim"] = {
 	config = conf.filetype,
 }
 
+tools["doums/oterm.nvim"] = {
+    opt = true,
+}
+
 return tools
