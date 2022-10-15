@@ -39,7 +39,7 @@ function Packer:load_packer()
 	if not is_mac then
 		packer.init({
 			compile_path = packer_compiled,
-			git = { clone_timeout = 60, default_url_format = "git@github.com:%s" },
+			git = { clone_timeout = 60, default_url_format = "https://github.com/%s" },
 			disable_commands = true,
 			display = {
 				open_fn = function()
@@ -50,7 +50,7 @@ function Packer:load_packer()
 	else
 		packer.init({
 			compile_path = packer_compiled,
-			git = { clone_timeout = 60, default_url_format = "git@github.com:%s" },
+			git = { clone_timeout = 60, default_url_format = "https://github.com/%s" },
 			disable_commands = true,
 			max_jobs = 20,
 			display = {
@@ -73,7 +73,7 @@ function Packer:init_ensure_plugins()
 	local packer_dir = data_dir .. "pack/packer/opt/packer.nvim"
 	local state = uv.fs_stat(packer_dir)
 	if not state then
-		local cmd = "!git clone git@github.com:wbthomason/packer.nvim.git " .. packer_dir
+		local cmd = "!git clone https://github.com/wbthomason/packer.nvim.git " .. packer_dir
 		api.nvim_command(cmd)
 		uv.fs_mkdir(data_dir .. "lua", 511, function()
 			assert("make compile path dir failed")

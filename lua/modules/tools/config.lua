@@ -61,6 +61,9 @@ function config.telescope()
 			buffers = fixfolds,
 			find_files = fixfolds,
 			git_files = fixfolds,
+            -- git_files = {
+            --     find_command = { "fd", "--hidden", "--glob", "" },
+            -- },
 			grep_string = fixfolds,
 			live_grep = fixfolds,
 			oldfiles = fixfolds,
@@ -209,7 +212,6 @@ function config.filetype()
 		},
 	})
 end
-
 
 
 function config.oterm()
