@@ -96,8 +96,8 @@ local plug_map = {
 	["n|<leader>w"] = map_cu("HopWord"):with_noremap(),
 	["n|<leader>j"] = map_cu("HopLine"):with_noremap(),
 	["n|<leader>k"] = map_cu("HopLine"):with_noremap(),
-	["n|<leader>c"] = map_cu("HopChar1"):with_noremap(),
-	["n|<leader>cc"] = map_cu("HopChar2"):with_noremap(),
+	--["n|<leader>c"] = map_cu("HopChar1"):with_noremap(),
+	--["n|<leader>cc"] = map_cu("HopChar2"):with_noremap(),
 	-- Plugin EasyAlign
 	["n|ga"] = map_cmd("v:lua.enhance_align('nga')"):with_expr(),
 	["x|ga"] = map_cmd("v:lua.enhance_align('xga')"):with_expr(),
