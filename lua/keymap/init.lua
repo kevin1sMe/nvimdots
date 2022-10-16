@@ -136,6 +136,13 @@ local plug_map = {
 	-- Plugin Diffview
 	["n|<leader>D"] = map_cr("DiffviewOpen"):with_silent():with_noremap(),
 	["n|<leader><leader>D"] = map_cr("DiffviewClose"):with_silent():with_noremap(),
+
+    -- Plugin floaterm
+    ["n|<leader>ft"] = map_cu("FloatermNew"):with_noremap():with_silent(),
+	["t|<leader>ft"] = map_cmd("<Esc><Cmd>FloatermNew<CR>"):with_noremap():with_silent(),
+	["n|<F8>"] = map_cu("FloatermToggle"):with_noremap():with_silent(),
+	["t|<F8>"] = map_cmd("<Esc><Cmd>FloatermToggle<CR>"):with_noremap():with_silent(),
+
 }
 
 bind.nvim_load_mapping(plug_map)

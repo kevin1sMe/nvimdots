@@ -1,6 +1,12 @@
 local tools = {}
 local conf = require("modules.tools.config")
 
+tools["voldikss/vim-floaterm"] = { opt = false }
+-- tools["voldikss/vim-floaterm"] = { 
+--     opt = true, 
+-- 	cmd = { "FloatermNew", "FloatermToggle" },
+-- }
+
 tools["nvim-lua/plenary.nvim"] = { opt = false }
 tools["nvim-telescope/telescope.nvim"] = {
 	opt = true,
@@ -52,10 +58,6 @@ tools["gelguy/wilder.nvim"] = {
 tools["nathom/filetype.nvim"] = {
 	opt = false,
 	config = conf.filetype,
-}
-
-tools["doums/oterm.nvim"] = {
-    opt = true,
 }
 
 return tools
