@@ -135,6 +135,9 @@ local plug_map = {
 	-- Plugin Diffview
 	["n|<leader>D"] = map_cr("DiffviewOpen"):with_silent():with_noremap(),
 	["n|<leader><leader>D"] = map_cr("DiffviewClose"):with_silent():with_noremap(),
+
+	-- Plugin oscyank
+	["v|<leader>y"] = map_cr("OSCYank"):with_noremap():with_silent(),
 }
 
 bind.nvim_load_mapping(plug_map)
