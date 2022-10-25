@@ -12,4 +12,10 @@ user["klen/nvim-test"] = {
 	cmd = { "TestSuite", "TestFile", "TestNearest", "TestInfo", "TestVisit", "TestEdit" },
 }
 
+user["simrat39/symbols-outline.nvim"] = {
+	opt = true,
+	config = conf.symbols_outline,
+	cmd = { "SymbolsOutline", "SymbolsOutlineOpen", "SymbolsOutlineClose" },
+}
+
 return user
