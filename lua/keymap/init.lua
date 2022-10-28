@@ -137,7 +137,10 @@ local plug_map = {
 	["n|<leader><leader>D"] = map_cr("DiffviewClose"):with_silent():with_noremap(),
 
 	-- Plugin oscyank
-	["v|<leader>y"] = map_cr("OSCYank"):with_noremap():with_silent(),
+	--["v|<leader><leader>y"] = map_cr("OSCYank"):with_noremap():with_silent(),
+	--["n|<leader>y"] = map_cu("lua require('osc52').copy_operator()"):with_noremap():with_expr(),
+	-- vim.keymap.set("x", "<leader>c", require("osc52").copy_visual)
+	--["v|<leader>y"] = map_cu("lua require('osc52').copy_visual()"):with_noremap(),
 }
 
 bind.nvim_load_mapping(plug_map)
